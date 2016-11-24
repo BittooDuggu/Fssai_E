@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Fssai_E-Learning_System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>spring</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+	
+  <servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>*.fssai</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Captcha</servlet-name>
+    <servlet-class>com.ir.captcha.Captcha</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Captcha</servlet-name>
+    <url-pattern>/Captcha.jpg</url-pattern>
+  </servlet-mapping>
+  
+ 
+  <servlet>
+    <servlet-name>searchCity</servlet-name>
+    <servlet-class>com.ir.servlet.SearchCity</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchCity</servlet-name>
+    <url-pattern>/searchCity.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>searchDistrict</servlet-name>
+    <servlet-class>com.ir.servlet.SearchDistrict</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchDistrict</servlet-name>
+    <url-pattern>/searchDistrict.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>editCityData</servlet-name>
+    <servlet-class>com.ir.servlet.EditCityData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editCityData</servlet-name>
+    <url-pattern>/editCityData.jspp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>loadDistrict</servlet-name>
+    <servlet-class>com.ir.servlet.LoadDistrict</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loadDistrict</servlet-name>
+    <url-pattern>/loadDistrict.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>loadCity</servlet-name>
+    <servlet-class>com.ir.servlet.CityFill</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loadCity</servlet-name>
+    <url-pattern>/loadCity.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>onLoadDistrict</servlet-name>
+    <servlet-class>com.ir.servlet.OnLoadDistrict</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>onLoadDistrict</servlet-name>
+    <url-pattern>/onLoadDistrict.jspp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>searchState</servlet-name>
+    <servlet-class>com.ir.servlet.SearchState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchState</servlet-name>
+    <url-pattern>/searchState.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>checkState</servlet-name>
+    <servlet-class>com.ir.servlet.CheckState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkState</servlet-name>
+    <url-pattern>/CheckState.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteState</servlet-name>
+    <servlet-class>com.ir.servlet.DeleteState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteState</servlet-name>
+    <url-pattern>/deleteState.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteState1</servlet-name>
+    <servlet-class>com.ir.servlet.DeleteState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteState1</servlet-name>
+    <url-pattern>/deleteState1.jspp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <servlet>
+    <servlet-name>checkdata</servlet-name>
+    <servlet-class>com.ir.servlet.CheckData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkdata</servlet-name>
+    <url-pattern>/checkdata.jspp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>manageCourseContent</servlet-name>
+    <servlet-class>com.ir.servlet.ManageCourseContent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>manageCourseContent</servlet-name>
+    <url-pattern>/manageCourseContent.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>searchManageCourse</servlet-name>
+    <servlet-class>com.ir.servlet.SearchManageCourse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchManageCourse</servlet-name>
+    <url-pattern>/searchManageCourse.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>searchAssessor</servlet-name> 
+  <servlet-class>com.ir.servlet.SearchAssessor</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>searchAssessor</servlet-name> 
+  <url-pattern>/searchAssessor.jspp</url-pattern> 
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>deleteCourseContent</servlet-name> 
+  <servlet-class>com.ir.servlet.DeleteCourseContent</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>deleteCourseContent</servlet-name> 
+  <url-pattern>/deleteCourseContent.jspp</url-pattern> 
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>onLoadTrainingPartnerCenterId</servlet-name> 
+  <servlet-class>com.ir.servlet.OnLoadTrainingPartnerCenterId</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>onLoadTrainingPartnerCenterId</servlet-name> 
+  <url-pattern>/onLoadTrainingPartnerCenterId.jspp</url-pattern> 
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+   <servlet>
+    <servlet-name>searchManageCourseContent</servlet-name>
+    <servlet-class>com.ir.servlet.SearchManageCourseContent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchManageCourseContent</servlet-name>
+    <url-pattern>/searchManageCourseContent.jspp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>editManageCourseData</servlet-name> 
+  <servlet-class>com.ir.servlet.EditManageCourseData</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>editManageCourseData</servlet-name> 
+  <url-pattern>/editManageCourseData.jspp</url-pattern> 
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>deleteManageCourse</servlet-name> 
+  <servlet-class>com.ir.servlet.DeleteManageCourseData</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>deleteManageCourse</servlet-name> 
+  <url-pattern>/deleteManageCourse.jspp</url-pattern> 
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>loadCourseName</servlet-name> 
+  <servlet-class>com.ir.servlet.LoadCourseName</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>loadCourseName</servlet-name> 
+  <url-pattern>/loadCourseName.jspp</url-pattern> 
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>loadTrainingCenter</servlet-name> 
+  <servlet-class>com.ir.servlet.LoadTrainingCenter</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>loadTrainingCenter</servlet-name> 
+  <url-pattern>/loadTrainingCenter.jspp</url-pattern> 
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>searchTrainingPartnameList</servlet-name> 
+  <servlet-class>com.ir.servlet.OnLoadAdminTrainingPartnerList</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>searchTrainingPartnameList</servlet-name> 
+  <url-pattern>/searchTrainingPartnameList.jspp</url-pattern> 
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>searchAssessmentAgencyList</servlet-name> 
+  <servlet-class>com.ir.servlet.OnLoadAdminAssessmentAgencyList</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>searchAssessmentAgencyList</servlet-name> 
+  <url-pattern>/searchAssessmentAgencyList.jspp</url-pattern> 
+  </servlet-mapping>
+ 
+</web-app>
