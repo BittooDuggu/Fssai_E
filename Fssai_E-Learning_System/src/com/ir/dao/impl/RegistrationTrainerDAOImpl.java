@@ -2,7 +2,6 @@ package com.ir.dao.impl;
 
 
 import java.security.NoSuchAlgorithmException;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

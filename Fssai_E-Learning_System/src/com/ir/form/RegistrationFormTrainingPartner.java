@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.Email;
 
 public class RegistrationFormTrainingPartner {
 	
+
 	@NotNull @Size(min=1, max=20 , message="* error")
 	private String UserId;
 	@NotNull

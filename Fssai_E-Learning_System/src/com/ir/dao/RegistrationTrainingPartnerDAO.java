@@ -12,7 +12,6 @@ import com.ir.model.TrainingPartner;
 public interface RegistrationTrainingPartnerDAO {
 
 	String register(RegistrationFormTrainingPartner registrationFormTrainingPartner);
-
 	List<State> loadState();
 
 	List<Title> loadTitle();
